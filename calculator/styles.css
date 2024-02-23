@@ -1,0 +1,90 @@
+body {
+    background-color: bisque;
+  }
+  
+  .calculator-container {
+    width: 220px;
+    height: 350px;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+  }
+  
+  .output-container {
+    width: 200px;
+    height: 50px;
+    background-color: green;
+    color: white;
+    font-size: 24px;
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+    margin-bottom: 1rem;
+  }
+  
+  #formula {
+    color: orange;
+    font-size: 14px;
+  }
+  
+  .clicks-container {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .numbers-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+  }
+  
+  #clear,
+  #zero {
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+  
+  #clear {
+    background-color: brown;
+  }
+  
+  .operators-container {
+    display: grid;
+    grid-template-rows: repeat(5, 1fr);
+  }
+  
+  #equals {
+    grid-row-start: 4;
+    grid-row-end: 6;
+    background-color: cornflowerblue;
+  }
+  
+  .square {
+    width: 50px;
+    height: 50px;
+    background-color: darkgrey;
+  }
+  
+  .rectangle {
+    width: 100px;
+    height: 50px;
+    background-color: darkgrey;
+  }
+  
+  .rectangle-reverse {
+    width: 50px;
+    height: 100px;
+  }
+  
+  .grey-background {
+    background-color: gray;
+  }
+  
+  button:hover {
+    border: 1px gold solid;
+  }
